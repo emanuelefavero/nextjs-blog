@@ -11,6 +11,15 @@ export default function Post({ postData }) {
       {postData.id}
       <br />
       {postData.date}
+
+      <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+
+      {/* 
+
+      dangerouslySetInnerHTML is a React feature that allows you to render HTML that comes from an external source as if it were regular JSX. It replaces innerHTML used by Javascript.
+      Here we are rendering the HTML that comes from the markdown file thanks to remark (remark converted the markdown into HTML)
+
+       */}
     </Layout>
   )
 }
@@ -26,7 +35,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const postData = getPostData(params.id)
+  const postData = await getPostData(params.id)
 
   return {
     props: {
