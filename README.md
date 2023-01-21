@@ -2,6 +2,10 @@
 
 This is a simple blog built with NextJS.
 
+#### Screenshot
+
+<img src="screenshot.png" alt="screenshot" width="300">
+
 ## Create a NextJS App
 
 - `npx create-next-app APP-NAME`
