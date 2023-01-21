@@ -1,6 +1,14 @@
 # NextJS Blog
 
-This is a simple blog built with NextJS.
+This is a simple blog built with NextJS to show its features
+
+## Features
+
+- Use markdown files to create blog posts
+- Parse markdown files using `gray-matter` and `remark`
+- Display blog posts on home page and on their own page
+- Sort blog posts by date
+- Style blog posts using TailwindCSS and Sass
 
 ## Demo
 
