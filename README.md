@@ -10,6 +10,10 @@ This is a simple blog built with NextJS.
 
 <img src="screenshot.png" alt="screenshot" width="300">
 
+## License
+
+- [MIT](LICENSE.md)
+
 ## Create a NextJS App
 
 - `npx create-next-app APP-NAME`
