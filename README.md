@@ -10,23 +10,21 @@ This is a simple blog built with NextJS.
 
 <img src="screenshot.png" alt="screenshot" width="300">
 
-## License
+## Run App Locally
 
-- [MIT](LICENSE.md)
+- clone repo
+- `cd` into repo
+- run `npm install`
+- run `npm run dev`
 
-## Create a NextJS App
+## Create a new NextJS App
 
 - `npx create-next-app APP-NAME`
 
-#### Create a NextJS App with TypeScript and ESLint
+#### Create a new NextJS App with TypeScript and ESLint
 
 - `npx create-next-app APP-NAME --typescript --eslint`
 
-## NextJS Summary of Features
+## License
 
-- automatic code splitting for faster page loads
-- prefetching of linked pages (in production)
-- client side navigation
-- create routes as files under `pages` and use built-in `Link` component. No routing libraries needed
-
-> Note: If you need to link to an external page, just use an `<a>` tag
+- [MIT](LICENSE.md)
