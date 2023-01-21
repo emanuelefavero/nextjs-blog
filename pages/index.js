@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Date from '@/components/Date'
 import Head from 'next/head'
 import Layout, { siteTitle } from '@/components/Layout'
 import utilStyles from '@/styles/utils.module.scss'
@@ -11,7 +12,7 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
+      <section className={`${utilStyles.headingMd} text-gray-600`}>
         <p>
           Hello, I'm <b>Emanuele</b>. I'm a software engineer in love with front
           end development. You can contact me on{' '}
@@ -34,11 +35,13 @@ export default function Home({ allPostsData }) {
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
-              <br />
-              {id}
-              <br />
-              {date}
+              <div className='font-medium mb-1 mt-5'>
+                <Link href={`/posts/${id}`}>{title}</Link>
+              </div>
+              {/* <br /> */}
+              <small className='text-gray-500 font-medium'>
+                <Date dateString={date} />
+              </small>
             </li>
           ))}
         </ul>

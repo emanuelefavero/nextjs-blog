@@ -22,7 +22,7 @@ export default function Post({ postData }) {
 
       {/* Post Content */}
       <div
-        className='text-gray-700'
+        className='text-gray-600'
         dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
       />
 
