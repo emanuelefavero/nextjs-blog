@@ -2,14 +2,6 @@
 
 This is a simple blog built with NextJS to show its features
 
-## Features
-
-- Use markdown files to create blog posts
-- Parse markdown files using `gray-matter` and `remark`
-- Display blog posts on home page and on their own page
-- Sort blog posts by date
-- Style blog posts using TailwindCSS and Sass
-
 ## Demo
 
 [https://nextjs-blog-g2nx.vercel.app/](https://nextjs-blog-g2nx.vercel.app/)
@@ -24,6 +16,14 @@ This is a simple blog built with NextJS to show its features
 - `cd` into repo
 - run `npm install`
 - run `npm run dev`
+
+## Features
+
+- Use markdown files to create blog posts
+- Parse markdown files using `gray-matter` and `remark`
+- Display blog posts on home page and on their own page
+- Sort blog posts by date
+- Style blog posts using TailwindCSS and Sass
 
 ## Technologies used in this project
 
